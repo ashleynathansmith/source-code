@@ -1,5 +1,9 @@
 @import '~bulma/bulma.sass';
 
+img {
+  opacity: 90%;
+}
+
 .fa-paper-plane {
   color: turquoise;
 }
@@ -8,6 +12,37 @@
   border: solid 1px turquoise;
   margin: 5px;
   padding: 0;
+}
+
+#what-we-do {
+  background-image: url(../styles/images/remy_loz-3S0INpfREQc-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: opacity(70%)
+}
+
+#getInTouch {
+  background-image: url(../styles/images/adria-berrocal-forcada-o7PxpvonuRQ-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 70%;
+}
+
+#getInTouchTitle {
+  color:black;
+}
+
+@media screen and (max-width: 900px) {
+  #icons {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #profile-image {
+    max-height: 300px;
+    max-width: 300px;
+  }
 }
 
 

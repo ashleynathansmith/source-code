@@ -1,6 +1,8 @@
 
 import React from 'react'
-import image from '../../styles/images/Ash.png'
+import profileImage from '../../styles/images/Ash.png'
+import weSourceImage from '../../styles/images/weSourceImage.jpg'
+import weCodeImage from '../../styles/images/image1.jpg'
 
 function Home() {
   return (
@@ -8,187 +10,157 @@ function Home() {
       <section className="hero is-fullheight-with-navbar is-white">
         <div className="hero-body">
           <div className="container">
-            <h1 className="title is-1 has-text-left is-family-primary has-text-weight-light">
+            <h1 className="title is-1 has-text-left is-family-primary has-text-weight-medium">
             We Are Source + Code
             </h1>
-            <h2 className="subtitle is-family-secondary has-text-weight-light is-5 has-text-primary">Recruiters who code, source the best talent and have a passion for all things tech</h2>
+            <h2 className="subtitle is-family-secondary has-text-weight-medium has-text-primary">Recruiters who code, source the best talent and have a passion for all things tech</h2>
           </div>
         </div>
       </section>
 
-      <section className="section is-medium has-background-light">
-        <div className="container">
-          <h1 className="title is-family-primary has-text-weight-light has-text-white is-1 has-text-primary">We Source:</h1>
-          <br />
-          <h2 className="message is-family-secondary has-text-weight-light has-text-black is-5">7 years <strong>experience</strong> sourcing industry leading talent specialising across engineering & tech.
-          </h2>
-          <h2 className="message is-family-secondary has-text-weight-light has-text-black is-5">A technical recruiter on a mission. Who was born out of industry frustrations and a <strong>passion </strong> to better bridge the gap when it came to talent attraction and in-house technology teams.</h2>
-          <h2 className="message is-family-secondary has-text-weight-light has-text-black is-5">A passion for technology. Hands on <strong>coding</strong> ability which we believe gives us a unique advantage supporting your organisations hiring needs.</h2>
-          <h2 className="message is-family-secondary has-text-weight-light has-text-black is-5">Personal industry built <strong>network</strong> focused around all things customer centric</h2>
-          <h2 className="message is-family-secondary has-text-weight-light has-text-black is-5">We provide an <strong>honest </strong>and holistic approach to support your digital transformation objectives  </h2>
-        </div>
-        <br />
-        <br />
-        <br />
-        <section className="section">
-          <div className="container">
-            <div className="columns is-multiline">
-              <div className="column is-one-sixth">
-                <article className="notification media has-background-light">
-                  <div className="media-content">
-                    <div className="content">
-                      <span className="icon">
-                        <i className="has-text-primary fas fa-code fa-4x"></i>
-                      </span>
-                    </div>
-                  </div>
-                </article>
+
+      <section className="hero is-fullheight has-background-light mt-1">
+        <div className="hero-body">
+          <div className="container has-text-left">
+            <div className="columns is-vcentered">
+              <div className="column is-4 is-offset-1">
+                <figure className="image is-4by3">
+                  <img src={weSourceImage} alt="Description" />
+                </figure>
               </div>
-              <div className="column is-one-sixth">
-                <article className="notification has-background-light media">
-                  <div className="media-content">
-                    <div className="content">
-                      <span className="icon has-text-primary">
-                        <i className="fas fa-network-wired fa-5x"></i>
-                      </span>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div className="column is-one-sixth">
-                <article className="notification has-background-light media">
-                  <div className="media-content">
-                    <div className="content">
-                      <span className="icon has-text-primary">
-                        <i className="far fa-5x fa-comments"></i>
-                      </span>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div className="column is-one-sixth">
-                <article className="notification has-background-light media">
-                  <div className="media-content">
-                    <div className="content">
-                      <span className="icon has-text-primary">
-                        <i className="fas fa-5x fa-mobile-alt"></i>
-                      </span>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div className="column is-one-sixth">
-                <article className="notification has-background-light media">
-                  <div className="media-content">
-                    <div className="content">
-                      <span className="icon has-text-primary">
-                        <i className="fas fa-5x fa-globe-europe"></i>
-                      </span>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div className="column is-one-sixth">
-                <article className="notification has-background-light media">
-                  <div className="media-content">
-                    <div className="content">
-                      <span className="icon has-text-primary">
-                        <i className="far fa-5x fa-smile"></i>
-                      </span>
-                    </div>
-                  </div>
-                </article>
+              <div className="column is-5 is-offset-1">
+                <h1 className="title is-2 is-family-primary has-text-weight-medium">
+                            We Source
+                </h1>
+                <p className="is-6 is-family-primary has-text-weight-medium">
+              A technical recruiter on a mission. Source + Code was born out of industry frustrations and a passion to better bridge the gap when it came to talent attraction and in-house technology teams.
+                  <br />
+                  <br />
+                  A passion for technology. We believe our extensive recruitment experience combined with hands on coding knowledge gives us a unique advantage supporting your organisations hiring needs. 
+                </p>
+                <br />
+                <p className="has-text-left">
+                  <a className="button is-medium is-primary is-outlined is-family-primary has-text-weight-medium">
+                                Find out more
+                  </a>
+                </p>
               </div>
             </div>
           </div>
-        </section>
-      </section>
-      <section className="section is-medium has-background-white">
-        <div className="container">
-          <h1 className="title is-family-primary has-text-weight-light has-text-primary is-1">We Code:</h1>
-          <br />
-          <h2 className="message has-background-white is-family-secondary has-text-weight-light has-text-dark is-5">We love to <strong>code</strong>. After supporting in-house technology teams hiring needs over the years, we believe our passion for coding and talent gives us the best tools in order to support your organisations recruitment headaches.
-          </h2>
-          <h2 className="message has-background-white is-family-secondary has-text-weight-light has-text-dark is-5">Ash, the founder, started his coding journey in his spare-time to better understand the life of a Software Engineer. He has since gone on to graduate General Assemblys Software Engineering Immersive Course and has a passion for all things <strong>React.js</strong></h2>
-          <h2 className="message has-background-white is-family-secondary has-text-weight-light has-text-dark is-5">With 76% of hiring decision-makers reporting a concern or challenge in attracting and hiring passive candidates, we believe our knowledge across both coding and recruitment gives us a unique edge when networking and <strong>engaging</strong> with potential talent. </h2>
-          <h2 className="message has-background-white is-family-secondary has-text-weight-light has-text-dark is-5">Simply put, we are recruiters by day and aspiring coders by night, who are striving to provide the best possible service for our clients.</h2>
         </div>
-        <br />
-        <br />
-        <br />
-        <section className="section">
-          <div className="container">
-            <div className="columns is-multiline">
-              <div className="column is-one-sixth">
-                <article className="notification media has-background-white">
-                  <div className="media-content">
-                    <div className="content">
-                      <span className="icon">
-                        <i className="has-text-primary fab fa-react fa-5x"></i>
-                      </span>
-                    </div>
-                  </div>
-                </article>
+      </section>
+      <div className="has-background-white">
+      </div>
+      <section className="hero is-fullheight mt-1">
+        <div className="hero-body has-background-primary">
+          <div className="container has-text-left">
+            <div className="columns is-vcentered">
+              <div className="column is-5 is-offset-1">
+                <h1 className="title is-2 is-family-primary has-text-weight-medium">
+                            We Code
+                </h1>
+                <p className="is-6 is-family-primary has-text-weight-medium">
+              A technical recruiter on a mission. Source + Code was born out of common industry frustrations and a passion to better bridge the gap when it came to talent attraction and in-house technology teams.
+                  <br />
+                  <br />
+A passion for technology. We believe our extensive recruitment experience combined with hands on coding knowledge gives us a unique advantage supporting your organisations hiring needs. 
+                </p>
+                <br />
+              
+                <p className="has-text-left">
+                  <a className="button is-medium is-white is-outlined is-family-primary has-text-weight-medium">
+                                Find out more
+                  </a>
+                </p>
               </div>
-              <div className="column is-one-sixth">
-                <article className="notification has-background-white media">
-                  <div className="media-content">
-                    <div className="content">
-                      <span className="icon has-text-primary">
-                        <i className="fab fa-js-square fa-5x"></i>
-                      </span>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div className="column is-one-sixth">
-                <article className="notification has-background-white media">
-                  <div className="media-content">
-                    <div className="content">
-                      <span className="icon has-text-primary">
-                        <i className="fab fa-5x fa-python"></i>
-                      </span>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div className="column is-one-sixth">
-                <article className="notification has-background-white media">
-                  <div className="media-content">
-                    <div className="content">
-                      <span className="icon has-text-primary">
-                        <i className="fab fa-5x fa-html5"></i>
-                      </span>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div className="column is-one-sixth">
-                <article className="notification has-background-white media">
-                  <div className="media-content">
-                    <div className="content">
-                      <span className="icon has-text-primary">
-                        <i className="fab fa-5x fa-css3-alt"></i>
-                      </span>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div className="column is-one-sixth">
-                <article className="notification has-background-white media">
-                  <div className="media-content">
-                    <div className="content">
-                      <span className="icon has-text-primary">
-                        <i className="fab fa-5x fa-node"></i>
-                      </span>
-                    </div>
-                  </div>
-                </article>
+              <div className="column is-4 is-offset-1">
+                <figure className="image is-4by3">
+                  <img src={weCodeImage} alt="Description" />
+                </figure>
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </section>
+
+      <section id="what-we-do" className="hero is-medium has-background-light mt-1">
+        <div className="hero-body">
+          <h2 className="title is-1 has-text-centered is-family-primary has-text-weight-medium has-text-white">What We Do</h2>
+        </div>
+      </section>
+
+      <section className="hero is-fullheight">
+        <div className="hero-body">
+          <div className="columns is-vcentered is-multiline is-centered">
+            <div className="column post is-4 m-2 has-background-light">
+              <article className="columns is-multiline p-6">
+                <div className="column is-12 featured-content">
+                  <div className="has-text-centered">
+                    <br />
+                    <i className="fas fa-code fa-2x"></i>
+                  </div>
+                  <br />
+                  <h1 className="title post-title has-text-centered">Software Engineering</h1>
+                  <br />
+                  <p className="has-text-centered">
+                    <a href="#" className="button is-primary">Read More</a>
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div className="column post is-4 has-background-primary m-2">
+              <article className="columns is-multiline p-6">
+                <div className="column is-12 featured-content">
+                  <div className="has-text-centered">
+                    <br />
+                    <i className="fas fa-truck fa-2x"></i>
+                  </div>
+                  <br />
+                  <h1 className="title post-title has-text-centered">Software Delivery</h1>
+                  <br />
+                  <p className="has-text-centered">
+                    <a href="#" className="button is-primary">Read More</a>
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div className="column post is-4 has-background-primary m-2">
+              <article className="columns is-multiline p-6">
+                <div className="column is-12 featured-content">
+                  <div className="has-text-centered">
+                    <br />
+                    <i className="fas fa-laptop fa-2x"></i>
+                  </div>
+                  <br />
+                  <h1 className="title post-title has-text-centered">Product & Design</h1>
+                  <br />
+                  <p className="has-text-centered">
+                    <a href="#" className="button is-primary">Read More</a>
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div className="column post is-4 m-2 has-background-light">
+              <article className="columns is-multiline p-6">
+                <div className="column is-12 featured-content">
+                  <div className="has-text-centered">
+                    <br />
+                    <i className="fas fa-shopping-basket fa-2x"></i>
+                  </div>
+                  <br />
+                  <h1 className="title post-title has-text-centered">E-Commerce</h1>
+                  <br />
+                  <p className="has-text-centered">
+                    <a href="#" className="button is-primary">Read More</a>
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+                 
 
       <section id="about" className="hero has-background-light is-fullheight">
         <div className="hero-body">
@@ -200,10 +172,10 @@ function Home() {
           is-5-desktop is-offset-1-desktop
           is-5-widescreen is-offset-1-widescreen
           is-5-fullhd is-offset-1-fullhd" data-aos="fade-down">
-                <h1 className="title is-family-primary has-text-weight-light is-1 mb-6 has-text-primary">
+                <h1 className="title is-2 is-family-primary has-text-weight-medium has-text-primary">
               Who We Are:
                 </h1>
-                <h2 className="message is-family-secondary has-text-weight-light has-text-black is-5">
+                <h2 className="is-6 is-family-primary has-text-weight-medium">
               Since 2013, Ashley has a wealth of experience working within technical recruitment from agencies to in-house, building world-class engineering & digital teams.
                   <br />
                   <br />
@@ -212,6 +184,7 @@ function Home() {
                   <br />
               Our mission is to simply, better bridge the gap when it comes to recruitment & in-house technology teams to provide the best service we possibly can.
                 </h2>
+                <br />
                 <div className="buttons">
                   <a className="button is-medium is-linkedin" href="https://www.linkedin.com/in/ashleynathansmith/">
                     <span className="icon">
@@ -232,8 +205,8 @@ function Home() {
           is-4-desktop is-offset-1-desktop
           is-4-widescreen is-offset-1-widescreen
           is-4-fullhd is-offset-1-fullhd">
-                <figure className="image is-square">
-                  <img className="is-rounded" src={image} />
+                <figure className="image is-256x256">
+                  <img  id="profile-image" className="is-rounded" src={profileImage} />
                 </figure>
               </div>
 
@@ -241,28 +214,29 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <section id="getInTouch" className="hero is-medium has-background-light">
+        <div className="hero-body">
+          <h2 id="getInTouchTitle" className="title is-1 has-text-centered is-family-primary has-text-weight-medium has-text-white">Get in touch</h2>
+        </div>
+      </section>
       
-      <section className="section is-small" id="contact">
+      <section className="section is-small has-background-primary mt-1" id="contact">
         <div className="section-light contact" id="contact">
           <div className="container m-5">
             <div
               className="columns is-multiline"
             >
-              <div className="column is-12 about-me">
-                <h1 className="title has-text-centered section-title is-family-primary has-text-weight-light">
-                Get in touch
-                </h1>
-              </div>
               <div className="column is-8 is-offset-2">
                 <form
                   action="https://formspree.io/ashleynathansmith@gmail.com"
                   method="POST"
                 >
                   <div className="field">
-                    <label className="label is-family-secondary has-text-weight-light">Name</label>
+                    <label className="label is-family-secondary has-text-weight-medium">Name</label>
                     <div className="control has-icons-left">
                       <input
-                        className="input"
+                        className="input is-white"
                         type="text"
                         placeholder="Ex. Jane Smith"
                         name="Name"
@@ -273,10 +247,10 @@ function Home() {
                     </div>
                   </div>
                   <div className="field">
-                    <label className="label is-family-secondary has-text-weight-light">Email</label>
+                    <label className="label is-family-secondary has-text-weight-medium">Email</label>
                     <div className="control has-icons-left">
                       <input
-                        className="input"
+                        className="input is-white"
                         type="email"
                         placeholder="Ex. hello@arctheme.com"
                         name="Email"
@@ -287,10 +261,10 @@ function Home() {
                     </div>
                   </div>
                   <div className="field">
-                    <label className="label is-family-secondary has-text-weight-light">Message</label>
+                    <label className="label is-family-secondary has-text-weight-medium">Message</label>
                     <div className="control">
                       <textarea
-                        className="textarea"
+                        className="textarea is-white"
                         placeholder="How can we help..."
                         name="Message"
                       ></textarea>
@@ -298,7 +272,7 @@ function Home() {
                   </div>
                   <div className="field">
                     <div className="control ">
-                      <button className="button submit-button is-family-secondary has-text-weight-light">
+                      <button className="button submit-button is-family-secondary has-text-weight-medium is-outlined has-background-white has-text-black is-white">
                       Submit&nbsp;&nbsp;
                         <i className="fas fa-paper-plane"></i>
                       </button>
@@ -310,69 +284,68 @@ function Home() {
           </div>
         </div>
         <br />
-        <section className="section">
-          <div className="container">
-            <div className="columns is-multiline">
-              <div className="column is-one-third">
-                <article className="notification media has-background-white">
-                  <figure className="media-left">
-                    <span className="icon">
-                      <i className="has-text-primary fas fa-mobile-alt fa-lg"></i>
-                    </span>
-                  </figure>
-                  <div className="media-content">
-                    <div className="content">
-                      <h1 className="is-family-secondary has-text-weight-light has-text-black is-5">Phone</h1>
-                      <p className="message has-background-white is-family-secondary has-text-weight-light has-text-dark is-5">
+        <div className="container">
+          <div className="columns is-multiline">
+            <div className="column is-one-third">
+              <article className="notification media has-background-primary">
+                <figure className="media-left">
+                  <span className="icon">
+                    <i className="has-text-primary fas fa-mobile-alt fa-lg"></i>
+                  </span>
+                </figure>
+                <div className="media-content">
+                  <div className="content">
+                    <h1 className="is-family-secondary has-text-weight-medium has-text-black is-5">Phone</h1>
+                    <p className="message has-background-primary is-family-secondary has-text-weight-medium has-text-dark is-5">
                 07854614734
-                      </p>
-                    </div>
+                    </p>
                   </div>
-                </article>
-              </div>
-              <div className="column is-one-third">
-                <article className="notification has-background-white media">
-                  <figure className="media-left">
-                    <span className="icon has-text-primary">
-                      <i className="far fa-lg fa-envelope"></i>
-                    </span>
-                  </figure>
-                  <div className="media-content">
-                    <div className="content">
-                      <h1 className="is-family-secondary has-text-weight-light has-text-black is-5">Email</h1>
-                      <p className="message has-background-white is-family-secondary has-text-weight-light has-text-dark is-5">
+                </div>
+              </article>
+            </div>
+            <div className="column is-one-third">
+              <article className="notification has-background-primary media">
+                <figure className="media-left">
+                  <span className="icon has-text-primary">
+                    <i className="far fa-lg fa-envelope"></i>
+                  </span>
+                </figure>
+                <div className="media-content">
+                  <div className="content">
+                    <h1 className="is-family-secondary has-text-weight-medium has-text-black is-5">Email</h1>
+                    <p className="message has-background-primary is-family-secondary has-text-weight-medium has-text-dark is-5">
                 ashley@sourceandcode.co.uk
-                      </p>
-                    </div>
+                    </p>
                   </div>
-                </article>
-              </div>
-              <div className="column is-one-third">
-                <article className="notification has-background-white media">
-                  <figure className="media-left">
-                    <span className="icon has-text-primary">
-                      <i className="fab fa-lg fa-linkedin-in"></i>
-                    </span>
-                  </figure>
-                  <div className="media-content">
-                    <div className="content">
-                      <h1 className="is-family-secondary has-text-weight-light has-text-black is-5">LinkedIn</h1>
-                      <p className="message has-background-white is-family-secondary has-text-weight-light has-text-dark is-5">
+                </div>
+              </article>
+            </div>
+            <div className="column is-one-third">
+              <article className="notification has-background-primary media">
+                <figure className="media-left">
+                  <span className="icon has-text-primary">
+                    <i className="fab fa-lg fa-linkedin-in"></i>
+                  </span>
+                </figure>
+                <div className="media-content">
+                  <div className="content">
+                    <h1 className="is-family-secondary has-text-weight-medium has-text-black is-5">LinkedIn</h1>
+                    <p className="message has-background-primary is-family-secondary has-text-weight-medium has-text-dark is-5">
                 www.linkedin.com/source+code
-                      </p>
-                    </div>
+                    </p>
                   </div>
-                </article>
-              </div>
+                </div>
+              </article>
             </div>
           </div>
-        </section>
+        </div>
       </section>
     
 
-      <footer className="footer">
+      <footer className="footer has-background-white">
         <div className="content has-text-centered">
-          <p className="has-text-weight-light">Website made by <a className="has-text-primary" href="https://www.linkedin.com/in/ashleynathansmith/"><strong>Source + Code</strong></a>
+          <br />
+          <p className="has-text-weight-medium">Website built by <a className="has-text-primary" href="https://www.linkedin.com/in/ashleynathansmith/"><strong>Source + Code</strong></a>
           </p>
         </div>
       </footer>
