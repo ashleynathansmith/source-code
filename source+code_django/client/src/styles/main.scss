@@ -32,6 +32,23 @@ img {
   color:black;
 }
 
+.main {
+  position: relative;
+}
+.main:after {
+  content : "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../styles/images/adam-jang-8pOTAtyd_Mc-unsplash.jpg); 
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  opacity : 0.7;
+  z-index: -1;
+}
+
 @media screen and (max-width: 900px) {
   #icons {
     display: none;

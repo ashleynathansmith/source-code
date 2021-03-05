@@ -1,10 +1,18 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 import profileImage from '../../styles/images/Ash.png'
 import weSourceImage from '../../styles/images/weSourceImage.jpg'
 import weCodeImage from '../../styles/images/image1.jpg'
 
 function Home() {
+
+  const [isActive, setIsActive] = useState(false)
+
+  const toggleClass = e => {
+    e.preventDefault()
+    setIsActive(!isActive)
+  }
+  
   return (
     <div>
       <section className="hero is-fullheight-with-navbar is-white">
@@ -83,7 +91,7 @@ A passion for technology. We believe our extensive recruitment experience combi
         </div>
       </section>
 
-      <section id="what-we-do" className="hero is-medium has-background-light mt-1">
+      <section id="what-we-do" className="hero is-medium mt-1">
         <div className="hero-body">
           <h2 className="title is-1 has-text-centered is-family-primary has-text-weight-medium has-text-white">What We Do</h2>
         </div>
@@ -92,69 +100,126 @@ A passion for technology. We believe our extensive recruitment experience combi
       <section className="hero is-fullheight">
         <div className="hero-body">
           <div className="columns is-vcentered is-multiline is-centered">
-            <div className="column post is-4 m-2 has-background-light">
-              <article className="columns is-multiline p-6">
-                <div className="column is-12 featured-content">
-                  <div className="has-text-centered">
+            <div className='column post is-4 m-2 has-background-light'>
+              {isActive ?
+                <article className="columns is-multiline p-6">
+                  <div className="column is-12 featured-content">
+                    <div className="has-text-centered">
+                      <br />
+                      <i className="fas fa-code fa-2x"></i>
+                    </div>
                     <br />
-                    <i className="fas fa-code fa-2x"></i>
+                    <h1 className="title post-title has-text-centered">Software Engineering</h1>
+                    <br />
+                    <p className="has-text-centered">
+                      <a onClick={toggleClass} className="button is-primary">Read More</a>
+                    </p>
                   </div>
-                  <br />
-                  <h1 className="title post-title has-text-centered">Software Engineering</h1>
-                  <br />
-                  <p className="has-text-centered">
-                    <a href="#" className="button is-primary">Read More</a>
-                  </p>
-                </div>
-              </article>
+                </article>
+                :
+                <article className="columns is-multiline p-6">
+                  <div className="column is-12 featured-content">
+                    <div className="has-text-centered">
+                      <p>Ne debet graecis epicuri mei, posse iracundia rationibus id vim. Ex audiam dissentias eum, in tempor civibus ius. Honestatis accommodare an has, has ut stet dolore abhorreant, zril graece perfecto ex cum. Eum ei dicit mundi efficiantur. Menandri iudicabit accommodare sit ex, pro timeam convenire mediocritatem te.</p>
+                    </div>
+                    <br />
+                    <p className="has-text-centered">
+                      <a onClick={toggleClass} className="button is-primary">Back</a>
+                    </p>
+                  </div>
+                </article>
+              }
+              
             </div>
             <div className="column post is-4 has-background-primary m-2">
-              <article className="columns is-multiline p-6">
-                <div className="column is-12 featured-content">
-                  <div className="has-text-centered">
+              {isActive ?
+                <article className="columns is-multiline p-6">
+                  <div className="column is-12 featured-content">
+                    <div className="has-text-centered">
+                      <br />
+                      <i className="fas fa-truck fa-2x"></i>
+                    </div>
                     <br />
-                    <i className="fas fa-truck fa-2x"></i>
+                    <h1 className="title post-title has-text-centered">Software Delivery</h1>
+                    <br />
+                    <p className="has-text-centered">
+                      <a className="button is-primary" onClick={toggleClass}>Read More</a>
+                    </p>
                   </div>
-                  <br />
-                  <h1 className="title post-title has-text-centered">Software Delivery</h1>
-                  <br />
-                  <p className="has-text-centered">
-                    <a href="#" className="button is-primary">Read More</a>
-                  </p>
-                </div>
-              </article>
+                </article>
+                :
+                <article className="columns is-multiline p-6">
+                  <div className="column is-12 featured-content">
+                    <div className="has-text-centered">
+                      <p>Ne debet graecis epicuri mei, posse iracundia rationibus id vim. Ex audiam dissentias eum, in tempor civibus ius. Honestatis accommodare an has, has ut stet dolore abhorreant, zril graece perfecto ex cum. Eum ei dicit mundi efficiantur. Menandri iudicabit accommodare sit ex, pro timeam convenire mediocritatem te.</p>
+                    </div>
+                    <br />
+                    <p className="has-text-centered">
+                      <a className="button is-primary" onClick={toggleClass}>Back</a>
+                    </p>
+                  </div>
+                </article>
+              }
             </div>
             <div className="column post is-4 has-background-primary m-2">
-              <article className="columns is-multiline p-6">
-                <div className="column is-12 featured-content">
-                  <div className="has-text-centered">
+              {isActive ? 
+                <article className="columns is-multiline p-6">
+                  <div className="column is-12 featured-content">
+                    <div className="has-text-centered">
+                      <br />
+                      <i className="fas fa-laptop fa-2x"></i>
+                    </div>
                     <br />
-                    <i className="fas fa-laptop fa-2x"></i>
+                    <h1 className="title post-title has-text-centered">Product & Design</h1>
+                    <br />
+                    <p className="has-text-centered">
+                      <a onClick={toggleClass} className="button is-primary">Read More</a>
+                    </p>
                   </div>
-                  <br />
-                  <h1 className="title post-title has-text-centered">Product & Design</h1>
-                  <br />
-                  <p className="has-text-centered">
-                    <a href="#" className="button is-primary">Read More</a>
-                  </p>
-                </div>
-              </article>
+                </article>
+                :
+                <article className="columns is-multiline p-6">
+                  <div className="column is-12 featured-content">
+                    <div className="has-text-centered">
+                      <p>Ne debet graecis epicuri mei, posse iracundia rationibus id vim. Ex audiam dissentias eum, in tempor civibus ius. Honestatis accommodare an has, has ut stet dolore abhorreant, zril graece perfecto ex cum. Eum ei dicit mundi efficiantur. Menandri iudicabit accommodare sit ex, pro timeam convenire mediocritatem te.</p>
+                    </div>
+                    <br />
+                    <p className="has-text-centered">
+                      <a onClick={toggleClass} className="button is-primary">Back</a>
+                    </p>
+                  </div>
+                </article>
+              }
             </div>
             <div className="column post is-4 m-2 has-background-light">
-              <article className="columns is-multiline p-6">
-                <div className="column is-12 featured-content">
-                  <div className="has-text-centered">
+              {isActive ?
+                <article className="columns is-multiline p-6">
+                  <div className="column is-12 featured-content">
+                    <div className="has-text-centered">
+                      <br />
+                      <i className="fas fa-shopping-basket fa-2x"></i>
+                    </div>
                     <br />
-                    <i className="fas fa-shopping-basket fa-2x"></i>
+                    <h1 className="title post-title has-text-centered">E-Commerce</h1>
+                    <br />
+                    <p className="has-text-centered">
+                      <a onClick={toggleClass} className="button is-primary">Read More</a>
+                    </p>
                   </div>
-                  <br />
-                  <h1 className="title post-title has-text-centered">E-Commerce</h1>
-                  <br />
-                  <p className="has-text-centered">
-                    <a href="#" className="button is-primary">Read More</a>
-                  </p>
-                </div>
-              </article>
+                </article>
+                :
+                <article className="columns is-multiline p-6">
+                  <div className="column is-12 featured-content">
+                    <div className="has-text-centered">
+                      <p>Ne debet graecis epicuri mei, posse iracundia rationibus id vim. Ex audiam dissentias eum, in tempor civibus ius. Honestatis accommodare an has, has ut stet dolore abhorreant, zril graece perfecto ex cum. Eum ei dicit mundi efficiantur. Menandri iudicabit accommodare sit ex, pro timeam convenire mediocritatem te.</p>
+                    </div>
+                    <br />
+                    <p className="has-text-centered">
+                      <a onClick={toggleClass} className="button is-primary">Back</a>
+                    </p>
+                  </div>
+                </article>
+              }
             </div>
           </div>
         </div>
@@ -236,7 +301,7 @@ A passion for technology. We believe our extensive recruitment experience combi
                     <label className="label is-family-secondary has-text-weight-medium">Name</label>
                     <div className="control has-icons-left">
                       <input
-                        className="input is-white"
+                        className="input"
                         type="text"
                         placeholder="Ex. Jane Smith"
                         name="Name"
@@ -272,7 +337,7 @@ A passion for technology. We believe our extensive recruitment experience combi
                   </div>
                   <div className="field">
                     <div className="control ">
-                      <button className="button submit-button is-family-secondary has-text-weight-medium is-outlined has-background-white has-text-black is-white">
+                      <button className="button submit-button is-family-secondary has-text-weight-medium is-outlined has-background-white has-text-black">
                       Submit&nbsp;&nbsp;
                         <i className="fas fa-paper-plane"></i>
                       </button>

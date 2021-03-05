@@ -1,13 +1,9 @@
-/* eslint-disable no-unused-vars */
 import React from 'react'
 import { Link } from 'react-router-dom'
 
 function Nav() {
 
-  const doMail = () => {
-    const email = 'ashleynathansmith@gmail.com'
-    location.href = 'mailto:' + email
-  }
+
 
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">

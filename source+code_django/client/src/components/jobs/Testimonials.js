@@ -4,19 +4,19 @@ function Testimonials() {
   return (
     <body>
       <div>
-        <section className="hero is-primary">
+        <section className="hero is-medium is-primary">
           <div className="hero-body">
             <div className="columns">
               <div className="column is-12">
                 <div className="container content">
-                  <h1 className="title is-1 has-text-left is-family-primary has-text-weight-light">Testimonials</h1>
+                  <h1 className="title is-1 has-text-left is-family-primary has-text-weight-medium">Testimonials</h1>
                 </div>
               </div>
             </div>
           </div>
         </section>
       </div>
-      <section className="section">
+      <section className="main section mt-1">
         <div className="container">
           <div className="columns">
             <div className="column is-3">
