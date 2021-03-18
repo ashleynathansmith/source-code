@@ -4,8 +4,33 @@ img {
   opacity: 90%;
 }
 
+h2 {
+  font-family: Helvetica;
+}
+
 .fa-paper-plane {
   color: turquoise;
+}
+
+.homePage {
+  position: relative; 
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.homePage::before {
+  content: "";
+      background-image: url(../styles//images//andrej-lisakov-3A4XZUopCJA-unsplash.jpg);
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 70%;
+      background-size: 100% 100%;
 }
 
 .logo-nav {
@@ -18,7 +43,7 @@ img {
   background-image: url(../styles/images/remy_loz-3S0INpfREQc-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  filter: opacity(70%)
+  opacity: 70%;
 }
 
 #getInTouch {
@@ -32,22 +57,80 @@ img {
   color:black;
 }
 
-.main {
+#icons {
+  color: white;
+}
+
+#why-us-image {
+  background-image: url(../styles/images/minh-pham-lB9ylP8e9Sg-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  opacity: 70%;
+}
+
+.testimonials-main {
   position: relative;
 }
-.main:after {
+.testimonials-main:after {
   content : "";
   display: block;
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(../styles/images/adam-jang-8pOTAtyd_Mc-unsplash.jpg); 
+  background-image: url(../styles/images/nicolas-solerieu-Hgb4gzB1ZPs-unsplash.jpg); 
   background-size: 100% 100%;
   width: 100%;
   height: 100%;
-  opacity : 0.7;
+  opacity : 0.8;
   z-index: -1;
 }
+
+.ecommerceBox {
+  position: relative; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ecommerceBox::before {
+  content: "";
+      background-image: url(../styles/images/bruno-kelzer-LvySG1hvuzI-unsplash.jpg);
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 50%;
+      background-size: 100% 100%;
+}
+
+.softwareEngineeringBox {
+  position: relative; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.softwareEngineeringBox::before {
+  content: "";
+      background-image: url(../styles/images/artem-sapegin-b18TRXc8UPQ-unsplash.jpg);
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 70%;
+      background-size: 100% 100%;
+}
+
+h1, i, p {
+  position: relative;
+}
+
+
 
 @media screen and (max-width: 900px) {
   #icons {

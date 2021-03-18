@@ -6,7 +6,7 @@ function Nav() {
 
 
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
+    <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <div className="logo-nav">
           <Link to="/" className="navbar-item is-family-primary has-text-weight-medium">S+C</Link>
